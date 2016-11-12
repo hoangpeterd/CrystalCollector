@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+	<!-- linking CSS reset file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- linking CSS file -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- linking bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- linking jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- linking JS file -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body>
+<!-- jumbotron -->
+	<div class="container">
+		<br>
+ 		<div class="jumbotron">
+    		<h1>Crystals Collector</h1>
+    		<!-- instructions  -->
+    			<p>You will be given a random number at the start of the game.</p>
+    			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+    			<p>The value of each crystal is hidden from you until you click on it.</p>
+    			<p>Each time when the game starts, the game will change the value of each crystal</p>
+  		</div>
+	</div>
+<!-- main content -->
+	<div class="container">
+		<div class="row">
+			<!-- random number -->
+			<div class="col-md-2" align="center">
+				<p>Random Number</p>
+				<hr>
+				<h1 id="randomNumber"></h1>
+			</div>
+			<!-- crystal buttons -->
+			<div class="col-md-8" align="center">
+				<button class="btn btn-default btn-lg active" id="rectangleButton">
+					<img src="assets/images/rectangle.png" alt="Rectangle" width="130" height="130"></button>
+				<button class="btn btn-default btn-lg active" id="diamondButton">
+					<img src="assets/images/diamond.png" alt="Diamond" width="130" height="130"></button>
+				<button class="btn btn-default btn-lg active" id="circleButton">
+					<img src="assets/images/circle.png" alt="Circle" width="130" height="130"></button>
+				<button class="btn btn-default btn-lg active" id="squareButton">
+					<img src="assets/images/square.png" alt="Square" width="130" height="130"></button>
+			</div>
+			<!-- total score -->
+			<div class="col-md-2" align="center">
+				<p>Total Score</p>
+				<hr>
+			</div>
+		</div>
+	<!-- scoreboard -->
+		<div class="row">
+			<br>
+			<div class="col-md-12" align="center">
+				<p>W | L</p>
+			</div>	
+		</div>
+	</div>
+<!-- footer -->
+	<footer class="footer text-center">
+      <div class="container">
+      	<br>
+        <p class="text-muted">&copy; Copyright 2016 Peter Hoang</p>
+        <br>
+      </div>
+    </footer>
+</body>
+</html>

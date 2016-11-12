@@ -1,0 +1,20 @@
+/*centers text in jumbotron*/
+.container .jumbotron {
+	text-align: center;
+}
+
+/*adds padding to crystal images*/
+img {
+	padding: 20px;
+}
+
+/*adds a margin to space the buttons apart and remove the borders to match the jumbotron*/
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+	margin-left: 20px;
+	border: 0px;
+}
+
+/*removes the left margin on the left button*/
+button#rectangleButton.btn.btn-default.btn-lg.active {
+	margin-left: 0px;
+}
