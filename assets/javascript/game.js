@@ -19,17 +19,17 @@ $(document).ready(function () {
 	$('#circleButton').val(crystalValues[2]); 
 	$('#squareButton').val(crystalValues[3]);
 
-	// function for wins and losses
+	// function for win and loss results
 	function results() {
 		if (totalScore == randomNumber) {
 			wins++;
-			alert("You win! Try again!")
+			$('#myWinModal').modal('show');
 			$("#wins").html(wins);
 			reset();
 		} else if (totalScore > randomNumber) {
 			$("#totalScore").html(totalScore);
 			losses++;
-			alert("You lose! Try again!")
+			$('#myLossModal').modal('show');
 			$("#losses").html(losses);
 			reset();
 		}
