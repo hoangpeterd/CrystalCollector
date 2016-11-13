@@ -8,13 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- linking bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- linking jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!-- linking JS file -->
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
-<!-- jumbotron -->
+	<!-- jumbotron -->
 	<div class="container">
 		<br>
  		<div class="jumbotron">
@@ -27,7 +23,7 @@
     			<p>Each time when the game starts, the game will change the value of each crystal</p>
   		</div>
 	</div>
-<!-- main content -->
+	<!-- main content -->
 	<div class="container">
 		<div class="row">
 			<!-- random number -->
@@ -53,8 +49,9 @@
 				<hr>
 				<h1 id="totalScore"></h1>
 			</div>
+		<!-- end row 1 -->
 		</div>
-	<!-- scoreboard -->
+		<!-- scoreboard -->
 		<div class="row">
 			<br>
 			<div class="col-md-3"></div>
@@ -68,9 +65,49 @@
 				<hr>
 				<p id="losses"></p>
 			</div>	
+		<!-- end row 2 -->
 		</div>
+	<!-- end main content container -->
 	</div>
-<!-- footer -->
+	<!-- modals -->
+	<div class="container">
+  		<!-- win modal -->
+  		<div class="modal fade" id="myWinModal" role="dialog">
+    		<div class="modal-dialog modal-sm" align="center">
+      			<div class="modal-content">
+       				 <div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h4 class="modal-title">Congratulations!</h4>
+        			</div>
+        			<div class="modal-body">
+          				<p>You win! Try again.</p>
+        			</div>
+        			<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+    		</div>
+  		</div>
+  		<!-- loss modal -->
+  	  	<div class="modal fade" id="myLossModal" role="dialog">
+    		<div class="modal-dialog modal-sm" align="center">
+      			<div class="modal-content">
+       				 <div class="modal-header">
+          				<button type="button" class="close" data-dismiss="modal">&times;</button>
+          				<h4 class="modal-title">Condolences!</h4>
+        			</div>
+        			<div class="modal-body">
+          				<p>You lose! Try again.</p>
+        			</div>
+        			<div class="modal-footer">
+          			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+    		</div>
+  		</div>
+	<!-- end modal container -->
+	</div>
+	<!-- footer -->
 	<footer class="footer text-center">
       <div class="container">
       	<br>
@@ -78,5 +115,11 @@
         <br>
       </div>
     </footer>
+    <!-- linking jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- linking bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- linking JS file -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

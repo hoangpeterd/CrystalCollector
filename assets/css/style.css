@@ -18,3 +18,7 @@ img {
 button#rectangleButton.btn.btn-default.btn-lg.active {
 	margin-left: 0px;
 }
+
+.modal-header {
+	background-color: #dddddd;
+}
